@@ -1,0 +1,622 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  overflow: hidden;
+  
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+    
+}
+
+.app-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.page-wrap {
+  display: flex;
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+}
+
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+  width: 100vw;
+  
+}
+/*.page h1 {
+  font-size: 8rem;
+}*/
+.page-index {
+  background-color: #000;
+}
+
+.page-one {
+  background-color: #5F9EA0;
+}
+
+.page-two {
+  background-color:#459e9e
+}
+
+.page-three {
+  background-color: #BEC8D1;
+}
+
+.page-four {
+  background-color: #fff200;
+}
+
+.page-wrap > h1 {
+  margin-top: 0;
+}
+
+.ui-wrap {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 14px;
+  z-index: 1;
+}
+.navigation {
+  font-size: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*.anim-switch {
+  margin-top: 14px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}*/
+
+.exit-box {
+  color:#fff;
+  display: inline-block;
+  margin-left:14px;
+  cursor: pointer;
+  /* margin:0 14px; */
+}
+
+.exit-box [type='checkbox']{
+ margin:0 8px;
+}
+
+.navigation a {
+  display: inline-block;
+  color: #6F8FAF;
+  margin: 0 14px;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.navigation a:hover {
+  transform: scale(1.1);
+}
+
+a.selected {
+  background-color: #000;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+
+/* Parallax */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Blog Slide*/
+.card {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 600px;
+  height: 500px;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+button {
+  margin: 25px;
+  background-color: #ffffff;
+  border: transparent;
+  padding: 7px;
+  height: 50px;
+  width: 50px;
+  border-radius: 500px;
+}
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.wrapper {
+  display: flex;
+  margin: 20px;
+}
+
+/* Blog Slide*/
+
+
+
+
+
+/*Blog page parallax */
+
+.parallax {
+  /* The image used */
+  background-image: url('https://images.unsplash.com/photo-1473186505569-9c61870c11f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/*Blog page parallax */
+
+
+
+
+
+
+/*contact page parallax */
+
+.parallax1 {
+  /* The image used */
+  background-image: url('https://images.unsplash.com/photo-1499159058454-75067059248a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/*contact page parallax */
+
+
+
+
+
+
+/*About page parallax */
+
+.parallax2 {
+  /* The image used */
+  background-image: url('https://images.pexels.com/photos/315658/pexels-photo-315658.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*About page parallax */
+
+
+
+/*home page parallax */
+
+.parallax3 {
+  /* The image used */
+  background-image: url('/logo1.svg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*home page parallax */
+
+
+
+
+
+/*Services page parallax */
+
+.parallax4 {
+  /* The image used */
+  background-image: url('https://cdn.pixabay.com/photo/2015/09/09/19/56/office-932926_960_720.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*Services page parallax */
+
+
+
+
+
+
+
+
+
+
+
+/*Faqs*/
+
+
+
+body {
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.example-container {
+  width: 900px;
+  padding: 20px;
+}
+
+.refresh {
+  padding: 10px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.content-placeholder {
+  padding: 30px;
+  transform-origin: top center;
+  color: #ffffff;
+}
+
+header {
+  background: #000000;
+  
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.word {
+  height: 18px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-bottom: 8px;
+  margin-right: 8px;
+  
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.paragraph {
+  margin-bottom: 20px;
+}
+
+section {
+  overflow: hidden;
+}
+
+@media (max-width: 600px) {
+  .content-placeholder {
+    padding-left: 20px;
+  }
+
+  .header .word {
+    height: 30px;
+  }
+
+  .word {
+    height: 14px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+  }
+
+  .paragraph {
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+
+/*Faqs*/
+
+/*FAqs border animation */
+
+
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 90deg;
+  inherits: true;
+}
+
+@property --gradX {
+  syntax: '<percentage>';
+  initial-value: 50%;
+  inherits: true;
+}
+
+@property --gradY {
+  syntax: '<percentage>';
+  initial-value: 0%;
+  inherits: true;
+}
+
+
+
+
+
+:root {
+	--d: 2500ms;
+	--angle: 90deg;
+	--gradX: 100%;
+	--gradY: 50%;
+	--c1: rgba(168, 239, 255, 1);
+	--c2: rgba(168, 239, 255, 0.1);
+}
+
+.wrapper {
+	min-width: min(40rem, 100%);
+}
+
+.box {
+	
+	border-radius: 10px;
+	border: 0.20rem solid;
+	
+	border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+	animation: borderRotate var(--d) linear infinite forwards;
+}
+
+.box:nth-child(2) {
+	border-image: radial-gradient(ellipse at var(--gradX) var(--gradY), var(--c1), var(--c1) 10%, var(--c2) 40%) 30;
+	animation: borderRadial var(--d) linear infinite forwards;
+}
+
+@keyframes borderRotate {
+	100% {
+		--angle: 420deg;
+	}
+}
+
+@keyframes borderRadial {
+	20% {
+		--gradX: 100%;
+		--gradY: 50%;
+	}
+	40% {
+		--gradX: 100%;
+		--gradY: 100%;
+	}
+	60% {
+		--gradX: 50%;
+		--gradY: 100%;
+	}
+	80% {
+		--gradX: 0%;
+		--gradY: 50%;
+	}
+	100% {
+		--gradX: 50%;
+		--gradY: 0%;
+	}
+}
+
+
+
+
+
+
+
+/*FAqs border animation */
+
+
+/* Let's talk Button*/
+.glow-on-hover {
+  width: 420px;
+  height: 80px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 20px;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+
+/* Let's talk Button*/
+
+
+
+
+
+
+/* Parallax */
+
+@media only screen and (max-width: 1200px) {
+  body {
+    min-width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+
+  }
+
+  .card{
+
+
+    height:250px;
+    width:300px;
+  }
+
+
+
+  .parallax3 {
+  /* The image used */
+  background-image: url('/logo2.svg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  
+}
+
+.glow-on-hover {
+  width: 60%;
+  height: 60%;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 20px;
+}
+
+
+
+
+.example-container {
+  width: 100%;
+  padding: 20px;
+}
+
+
+
+
+}
+
+/* Parallax */
+
